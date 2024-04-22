@@ -1,0 +1,76 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+// $base-ff:          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$base-ff:          'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$head-ff:          'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$base-fs:          18px;
+$base-fw:          400;
+$small-fs:         $base-fs * 0.775;
+$base-lh:          1.7;
+$color:            #444;
+$brand-color:      #ea67a8;
+$h-color:          #eee;
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+
+$theme-colors: (
+  "primary": $brand-color
+);
+
+
+// Width of the content area
+$content-width:    800px;
+$on-palm:          600px;
+$on-laptop:        800px;
+
+
+/***
+ *
+ *     ,-----.       ,--.                               ,--.
+ *    '  .--./ ,---. |  | ,---. ,--.--.     ,---.  ,---.|  ,---.  ,---. ,--,--,--. ,---.
+ *    |  |    | .-. ||  || .-. ||  .--'    (  .-' | .--'|  .-.  || .-. :|        || .-. :
+ *    '  '--'\' '-' '|  |' '-' '|  |       .-'  `)\ `--.|  | |  |\   --.|  |  |  |\   --.
+ *     `-----' `---' `--' `---' `--'       `----'  `---'`--' `--' `----'`--`--`--' `----'
+ *
+ */
+
+
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import"bootstrap/bootstrap",
+        "loader",
+        "google-fonts",
+        "base",
+        "style",
+        "aos",
+        "post",
+        "toc",
+        "table",
+        "contact",
+        "pagination",
+        "syntax-highlighting",
+        "breadcrumbs",
+        "recent",
+        "author",
+        "share",
+        "skillbar",
+        "custom"
+;

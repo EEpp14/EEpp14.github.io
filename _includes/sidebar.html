@@ -1,0 +1,36 @@
+<div class="sidebar">
+    <div class="author-container shadow">
+     <div class="author">
+      <a href="{{'/' | relative_url}}">
+      <img src="{{site.data.main.image | relative_url}}" width="100%" height="auto;" alt="{{site.title}}"loading="lazy" />
+        </a>
+    </div>
+     <div class="about text-center"><h1 class="title"><a href="{{'/' | relative_url}}">{{site.data.main.name}}</a></h1></div>
+     <div class="bio text-center"><p class="m0">{{site.data.main.profession}}</p></div>
+     <hr class="dashed">
+     <div class="social text-center">
+         <ul class="portfolio p0">
+          {% for item in site.data.main.menu %}
+             <li><a {% if page.url == item.link %}class="active"{% endif %} href="{{item.link | relative_url}}">{{item.title}}</a></li>
+          {% endfor %}
+         </ul>
+         <ul class="sm p0 m0a">
+           {% if site.data.main.social.facebook.link %}
+             <li><a href="{{site.data.main.social.facebook.link}}"><i class="fa {{site.data.main.social.facebook.icon}}"></i></a></li>
+           {% endif %}
+
+           {% if site.data.main.social.twitter.link %}
+             <li><a href="{{site.data.main.social.twitter.link}}"><i class="fa {{site.data.main.social.twitter.icon}}"></i></a></li>
+           {% endif %}
+
+           {% if site.data.main.social.linkedin.link %}
+             <li><a href="{{site.data.main.social.linkedin.link}}"><i class="fa {{site.data.main.social.linkedin.icon}}"></i></a></li>
+           {% endif %}
+
+           {% if site.data.main.social.github.link %}
+             <li><a href="{{site.data.main.social.github.link}}"><i class="fa {{site.data.main.social.github.icon}}"></i></a></li>
+           {% endif %}
+         </ul>
+     </div>
+     </div>
+</div>

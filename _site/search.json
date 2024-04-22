@@ -1,0 +1,175 @@
+[
+
+{
+"category": "blog",
+"title": "VMWare Pro Homelab | Monitoring Suricata/Windows Logs With Wazuh",
+"description": "Enabling use of FreeBSD repos on pfSenseThis section will cover how to enable...",
+"url": "/blog/homelab-wazuh/",
+"image": "assets/images/thumbnails/homelab/Homelab-setup-guide-wazuh.jpg",
+"author": "Ethan Epperson"
+}
+,
+
+{
+"category": "blog",
+"title": "VMWare Pro Homelab | Suricata Setup on pfSense with Snort Alerts",
+"description": "Installing Suricata Package ManagerThis section will be a rundown on how to i...",
+"url": "/blog/homelab-suricata/",
+"image": "/assets/images/thumbnails/homelab/Homelab-setup-guide-suricata.jpg",
+"author": "Ethan Epperson"
+}
+,
+
+{
+"category": "blog",
+"title": "VMWare Pro Homelab | Active Directory Forest Setup pt. 2",
+"description": "Creating New User Account ObjectsContinuing the setup of our new active direc...",
+"url": "/blog/homelab-ad-forest-pt.2/",
+"image": "/assets/images/thumbnails/homelab/Homelab-setup-guide-windows.jpg",
+"author": "Ethan Epperson"
+}
+,
+
+{
+"category": "blog",
+"title": "VMWare Pro Homelab | Active Directory Forest Setup pt. 1",
+"description": "Creating the Active Directory Network VMsHere are the minimum specifications ...",
+"url": "/blog/homelab-ad-forest/",
+"image": "/assets/images/thumbnails/homelab/Homelab-setup-guide-windows.jpg",
+"author": "Ethan Epperson"
+}
+,
+
+{
+"category": "blog",
+"title": "VMWare Pro Homelab | DVWA Setup on Ubuntu Server",
+"description": "Installing DependenciesIn this part, we will be going over how to setup DVWA ...",
+"url": "/blog/homelab-dvwa/",
+"image": "/assets/images/thumbnails/homelab/Homelab-setup-guide-dvwa.jpg",
+"author": "Ethan Epperson"
+}
+,
+
+{
+"category": "blog",
+"title": "VMWare Pro Homelab | Metasploitable2 & Vulnhub",
+"description": "Creating/Importing the Isolated Network VMsWe will need to do some preparator...",
+"url": "/blog/homelab-metasploitable2-vulnhub/",
+"image": "/assets/images/thumbnails/homelab/Homelab-setup-guide-metasploit-vulnhub.jpg",
+"author": "Ethan Epperson"
+}
+,
+
+{
+"category": "blog",
+"title": "VMWare Pro Homelab | Kali & Tsurugi",
+"description": "Creating the Management VMsSince we already covered how to use the ‘New Virtu...",
+"url": "/blog/homelab-tsurugi-kali/",
+"image": "/assets/images/thumbnails/homelab/Homelab-setup-guide-kali-tsurugi.jpg",
+"author": "Ethan Epperson"
+}
+,
+
+{
+"category": "blog",
+"title": "VMWare Pro Homelab | Services & Firewall Setup",
+"description": "webConfigurator Setup WizardThis post focuses on using pfSense’s web applicat...",
+"url": "/blog/homelab-pfsense-webConfigurator/",
+"image": "/assets/images/thumbnails/homelab/Homelab-setup-guide-pfsense.jpg",
+"author": "Ethan Epperson"
+}
+,
+
+{
+"category": "blog",
+"title": "VMWare Pro Homelab | pfSense Setup",
+"description": "pfSense InstallationAfter you’ve obtained the pfSense ISO, we can begin to cr...",
+"url": "/blog/homelab-pfsense/",
+"image": "/assets/images/thumbnails/homelab/Homelab-setup-guide-pfsense.jpg",
+"author": "Ethan Epperson"
+}
+,
+
+{
+"category": "blog",
+"title": "VMWare Pro Homelab | VMWare Setup",
+"description": "VMWare PreferencesAfter you have downloaded and installed VMWare, you will se...",
+"url": "/blog/homelab-vmware/",
+"image": "/assets/images/thumbnails/homelab/Homelab-setup-guide.jpg",
+"author": "Ethan Epperson"
+}
+,
+
+{
+"category": "blog",
+"title": "VMWare Pro Homelab | Introduction",
+"description": "Welcome to the Homelab SeriesToday, I will be starting the process of buildin...",
+"url": "/blog/homelab-intro/",
+"image": "/assets/images/thumbnails/homelab/Homelab-setup-guide.jpg",
+"author": "Ethan Epperson"
+}
+
+,
+
+
+{
+"category": "",
+"title": "CIS | Database Security",
+"description": "Completed CourseworkBelow are the highlights of the coursework I have complet...",
+"url": "/projects/academic/cis-database-security/",
+"image": "/assets/images/thumbnails/academic/cis-coursework2.jpg",
+"author": ""
+}
+,
+
+{
+"category": "",
+"title": "CIS | Digital Forensics & Incident Response",
+"description": "Completed CourseworkBelow are the highlights of the coursework I have complet...",
+"url": "/projects/academic/cis-digital-forensics/",
+"image": "/assets/images/thumbnails/academic/cis-coursework2.jpg",
+"author": ""
+}
+,
+
+{
+"category": "",
+"title": "CIS | Network Security",
+"description": "Completed CourseworkBelow are the highlights of the coursework I have complet...",
+"url": "/projects/academic/cis-network-security/",
+"image": "/assets/images/thumbnails/academic/cis-coursework2.jpg",
+"author": ""
+}
+,
+
+{
+"category": "",
+"title": "CIS | Programming, Database Design, Systems Analysis",
+"description": "Completed CourseworkBelow are are the highlights of the coursework I have com...",
+"url": "/projects/academic/cis-programming-sql-systems-analysis/",
+"image": "/assets/images/thumbnails/academic/cis-coursework2.jpg",
+"author": ""
+}
+,
+
+{
+"category": "",
+"title": "Redline InfoStealer Malware Analysis with Wireshark",
+"description": "BackgroundThis project involves analyzing a malicious packet capture containi...",
+"url": "/projects/personal/malware-analysis/redline-infostealer-analysis/",
+"image": "assets/images/thumbnails/malware-analysis/redline-malware-analysis.jpg",
+"author": ""
+}
+,
+
+{
+"category": "",
+"title": "Boss of the SOC (BOTSv3) Threat Hunting and Incident Analysis",
+"description": "BackgroundThis project involves using Splunk to parse and analyze the Boss of...",
+"url": "/projects/personal/threat-hunting/bots-analysis/",
+"image": "assets/images/thumbnails/incident-response/splunk-bots.jpg",
+"author": ""
+}
+
+
+]

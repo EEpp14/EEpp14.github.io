@@ -1,0 +1,31 @@
+---
+layout: page
+permalink: /categories/
+title: Categories
+description: All the posts are sorted based on their category.
+---
+
+<div class="categories-page">
+  {% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <a name="{{ category_name | slugify }}"></a>
+    <h3 class="category-head">{{ category_name | capitalize}}</h3>
+    <div class="cat-row">
+      {% for post in site.categories[category_name] %}
+      <div>
+        <a class="nostyle" href="{{ post.url  | relative_url }}">
+          <div class="cards rounded overflow-hidden">
+            <div
+              class="image"
+              style="background-image: url({{post.image | relative_url }})"
+            ></div>
+            <p class="text-center">{{post.title}}</p>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

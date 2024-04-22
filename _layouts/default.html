@@ -1,0 +1,155 @@
+---
+layout: compress
+---
+
+<!--
+This layout is used in all pages. Making changes here will efect all pages. We recommend not to change anything here.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+
+  <body>
+    {% if site.data.main.color-scheme-changer-widget %} {% include
+    demo-color-scheme-selector.html %} {% endif %}
+    <div class="loader">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="container-grid">
+        {% include sidebar.html %}
+        <div class="main">
+          <div class="main-container shadow">
+            <div class="title-space">
+              <h1>{{page.title}}</h1>
+              <div class="input-group mb-3" data-aos="zoom-in">
+                <input
+                  type="text"
+                  class="form-control border-right-0"
+                  id="search-input"
+                />
+                <div class="input-group-append">
+                  <span class="input-group-text"
+                    ><i class="fa fa-search"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <hr class="dashed" />
+            <main>{{content}}</main>
+            <div id="search-container"></div>
+            <hr class="dashed" />
+            {% include footer.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery  -->
+    <script src="{{'/assets/js/jQuery.min.js' | relative_url }}"></script>
+
+    <!-- Hide Loader on load -->
+    <script>
+      $(document).ready(function () {
+        $(".loader").hide();
+      });
+    </script>
+
+    <!-- Fontawesome Icons CSS -->
+    <script>
+      (function () {
+        var css = document.createElement("link");
+        css.href =
+          "{{'/assets/font-awesome-4.7.0/css/font-awesome.min.css' | relative_url }}";
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(css);
+      })();
+    </script>
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="{{'/assets/font-awesome-4.7.0/css/font-awesome.min.css' | relative_url }}"
+      />
+    </noscript>
+
+    <!--  Search input -->
+    <script>
+      $("#search-input").keyup(function () {
+        $("main").hide();
+        $("search-container").show();
+        if (!$("#search-input").val()) {
+          $("main").show();
+          $("search-container").hide();
+        }
+      });
+    </script>
+
+    <!-- Script pointing to jekyll-search.js -->
+    <script src="{{'/assets/js/jekyll-search.min.js' | relative_url }}"></script>
+
+    <script>
+      SimpleJekyllSearch({
+        searchInput: document.getElementById("search-input"),
+        resultsContainer: document.getElementById("search-container"),
+        searchResultTemplate:
+          '<a class="nostyle" href="{url}"><div class="blog borders cards"><div class="image" style="background-image: url({image});"></div><div class="content"><h3 class="title">{title}</h3><p class="description">{description}</p></div></div></a>',
+        noResultsText: "No results found",
+        json: "{{'/search.json' | relative_url }}",
+      });
+    </script>
+
+    {% if page.type == 'home' %}
+    <script>
+      jQuery(document).ready(function () {
+        jQuery(".skillbar").each(function () {
+          jQuery(this)
+            .find(".skillbar-bar")
+            .animate(
+              {
+                width: jQuery(this).attr("data-percent"),
+              },
+              5000
+            );
+        });
+      });
+    </script>
+
+    {% endif %}
+
+    <!-- Animate on scroll CSS -->
+    <script>
+      (function () {
+        var css = document.createElement("link");
+        css.href = "https://unpkg.com/aos@2.3.1/dist/aos.css";
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(css);
+      })();
+    </script>
+
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="{{'/assets/animate-on-scroll/aos.min.css' | relative_url }}"
+      />
+    </noscript>
+
+    <script src="{{'/assets/animate-on-scroll/aos.min.js' | relative_url }}"></script>
+
+    <script>
+      AOS.init({
+        duration: 600,
+        once: true,
+        disable: "mobile",
+      });
+    </script>
+  </body>
+</html>

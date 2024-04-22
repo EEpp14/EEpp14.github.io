@@ -1,0 +1,33 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+description: These are the projects I have worked on.
+---
+
+{% assign sorted = site.projects | sort: 'date' | reverse %} {% for item in
+sorted %}
+<a href="{{item.url  | relative_url }}" class="nostyle">
+  <div
+    class="row work cards borders rounded overflow-hidden"
+    data-aos="fade-up"
+  >
+    <div class="col-md-6 work-ind">
+      <div
+        class="work-image"
+        style="background-image: url({{item.image  | relative_url }})"
+      ></div>
+    </div>
+    <div class="col-md-6 details">
+      <h1 class="double-u">{{item.title}}</h1>
+      <p>{{item.description | truncate: 120}}</p>
+      <p class="company">
+        <strong>Client:</strong><span> {{item.company}}</span>
+      </p>
+      <p class="date">
+        <strong>Date:</strong><span> {{ item.date | date: '%B %d, %Y' }}</span>
+      </p>
+    </div>
+  </div>
+</a>
+{% endfor %}

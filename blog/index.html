@@ -1,0 +1,18 @@
+---
+layout: page
+title: Articles
+description: Find all the posts here.
+---
+
+{% for post in paginator.posts %}
+<a class="nostyle" href="{{post.url | relative_url }}">
+  <div class="blog cards borders blog-list" data-aos="fade-up">
+    <div class="image" style="background-image: url({{post.image | relative_url}});"></div>
+    <div class="content">
+      <h3 class="title">{{post.title}}</h3>
+      <p class="description">{{post.content | strip_html | truncate: 180 }}</p>
+    </div>
+  </div>
+</a>
+
+{% endfor %} {% include pagination.html %}

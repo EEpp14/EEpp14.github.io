@@ -1,0 +1,76 @@
+<style>
+  .color-scheme-change-widget {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: 999;
+    opacity: 0.7;
+  }
+  #switcher {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #switcher li {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 0 15px 15px 0;
+    border-radius: 30px;
+    border: 3px solid black;
+  }
+
+  #switcher #color-1 {
+    background: #1abc9c;
+  }
+  #switcher #color-2 {
+    background: #2693e6;
+  }
+  #switcher #color-3 {
+    background: #987ce6;
+  }
+  #switcher #color-4 {
+    background: #ea67a8;
+  }
+  #switcher #color-5 {
+    background: #ec632b;
+  }
+</style>
+
+<div class="color-scheme-change-widget">
+  <div class="widget-container">
+    <ul id="switcher">
+      <li class="color-switcher-pallete" data-scheme="0" id="color-1"></li>
+      <li class="color-switcher-pallete" data-scheme="1" id="color-2"></li>
+      <li class="color-switcher-pallete" data-scheme="2" id="color-3"></li>
+      <li class="color-switcher-pallete" data-scheme="3" id="color-4"></li>
+      <li class="color-switcher-pallete" data-scheme="4" id="color-5"></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  const colorSchemes = ["default", "blue", "purple", "pink", "orange"];
+  var allPallete = document.getElementsByClassName("color-switcher-pallete");
+  const linkTag = document.getElementById("color-scheme");
+  let siteWideScheme = localStorage.getItem("colorScheme");
+
+  if (siteWideScheme) {
+    linkTag.setAttribute(
+      "href",
+      "{{site.baseurl}}/assets/css/main-" + siteWideScheme + ".css"
+    );
+  }
+
+  Array.prototype.forEach.call(allPallete, function (element) {
+    element.addEventListener("click", function () {
+      colorScheme = colorSchemes[element.dataset.scheme];
+      localStorage.setItem("colorScheme", colorScheme);
+      linkTag.setAttribute(
+        "href",
+        "{{site.baseurl}}/assets/css/main-" + colorScheme + ".css"
+      );
+    });
+  });
+</script>

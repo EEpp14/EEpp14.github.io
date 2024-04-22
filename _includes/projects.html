@@ -1,0 +1,18 @@
+<h2 class="m0a" data-aos="fade-up">Projects I've Worked on:</h2>
+<div class="projects">
+  {% assign sorted = site.projects | sort: 'date' | reverse %} {% for item in
+  sorted limit: include.limit %}
+  <a href="{{item.url | relative_url}}" class="nostyle p-3">
+    <div
+      class="project borders cards rounded overflow-hidden"
+      data-aos="fade-up"
+    >
+      <div
+        class="project-image"
+        style="background-image: url({{item.image | relative_url}})"
+      ></div>
+      <p class="title text-center">{{item.title}}</p>
+    </div>
+  </a>
+  {% endfor %}
+</div>

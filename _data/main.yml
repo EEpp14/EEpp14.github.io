@@ -1,0 +1,83 @@
+# Image, name, profession in the sidebar
+
+image: /assets/images/headshots/professional-hs.jpg
+name: Ethan Epperson
+profession: Cybersecurity Student | Let's Defend Together
+email: john@doe.com # The contact form submissions will be received in this email address.
+
+#   ,-----.       ,--.                   ,---.  ,--.
+#  '  .--./ ,---. |  | ,---. ,--.--.    '   .-' |  ,---.  ,---. ,--,--,--. ,---.
+#  |  |    | .-. ||  || .-. ||  .--'    `.  `-. |  .-.  || .-. :|        || .-. :
+#  '  '--'\' '-' '|  |' '-' '|  |       .-'    ||  | |  |\   --.|  |  |  |\   --.
+#   `-----' `---' `--' `---' `--'       `-----' `--' `--' `----'`--`--`--' `----'
+#
+# There are 5 color schemes to choose from.
+# The one at the bottom takes precedence.
+color-scheme: orange
+color-scheme: pink
+color-scheme: purple
+color-scheme: blue
+color-scheme: green
+
+
+# Set this to false in production
+color-scheme-changer-widget: false
+
+
+
+
+# Menu items in the sidebar
+# Use a maximum of 3 items
+menu:
+  - title: Projects
+    link: /projects/
+
+  - title: Blog
+    link: /blog/
+
+  - title: Contact
+    link: /contact/
+
+
+
+# Social icons in the sidebar
+# use font awesome icon code in the 'icon:' value
+social:
+  linkedin:
+      icon: fa-linkedin
+      link: https://www.linkedin.com/in/ethan-epperson-8608b5277
+
+  github:
+      icon: fa-github
+      link: https://www.github.com/EEpp14
+
+
+
+expertise:
+  - title: Linux
+    level: 60
+    color: rgb(247, 205, 182)
+
+  - title: Azure Security
+    level: 50
+    color: rgb(113, 178, 222)
+
+  - title: SQL & Database Security
+    level: 40
+    color: rgb(80, 185, 185)
+
+  - title: Splunk
+    level: 30
+    color: rgb(124, 142, 222)
+
+  - title: Incident Response
+    level: 50
+    color: rgb(160, 158, 158)
+
+  - title: Malware Analysis
+    level: 40
+    color: rgb(112, 195, 148)
+
+  - title: Penetration Testing
+    level: 30
+    color: rgb(230, 133, 172)

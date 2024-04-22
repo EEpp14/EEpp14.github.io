@@ -1,0 +1,16 @@
+{% if site.data.main.buy-button %}
+<div class="d-md-flex py-3">
+  <a
+    href="{{'/blog/blackcurrant/' | relative_url }}"
+    class="btn btn-primary btn-lg mr-md-4 mb-2"
+    data-aos="zoom-in"
+    >About {{site.title}}</a
+  >
+  <form>
+    <script
+      src="https://checkout.razorpay.com/v1/payment-button.js"
+      data-payment_button_id="pl_GFIR590yM0seg4"
+    ></script>
+  </form>
+</div>
+{% endif %}
