@@ -1,7 +1,7 @@
 ---
 title: VMWare Pro Homelab | Suricata Setup on pfSense with Snort Alerts
 # date: 2024-01-16 16:22:43 -500
-image: /assets/images/thumbnails/homelab/Homelab-setup-guide-suricata.jpg
+image: /assets/images/thumbnails/homelab/Homelab-setup-guide-Suricata.jpg
 author: Ethan Epperson
 categories: 
     - blog
